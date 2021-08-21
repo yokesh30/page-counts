@@ -1,0 +1,1 @@
+create table page_count (id int PRIMARY key AUTO_INCREMENT, language varchar(2), page varchar(255), count int, start varchar(25), end varchar(25), created_at datetime)

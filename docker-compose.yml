@@ -1,0 +1,13 @@
+version: '3'
+services:
+ page-count-db:
+    image: mysql/mysql-server:5.7
+    restart: always
+    ports:
+      - "3314:3306"
+    environment:
+      MYSQL_DATABASE: pagecounts
+      MYSQL_USER: pagecount
+      MYSQL_PASSWORD: pagecount
+    volumes:
+      - ./database/local:/var/lib/mysql

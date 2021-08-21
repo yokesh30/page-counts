@@ -1,0 +1,61 @@
+apply plugin: 'java'
+apply plugin: "org.springframework.boot"
+group 'page-counts'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.2.0.RELEASE'
+    }
+}
+
+repositories {
+    maven { url "https://artifacts.intranet.mckinsey.com/artifactory/central/" }
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:2.2.0.RELEASE")
+    implementation("org.springframework.boot:spring-boot-starter-jdbc:2.2.0.RELEASE")
+    compile("org.projectlombok:lombok:1.18.16")
+//    implementation group: 'org.springframework', name: 'spring-context', version: '5.1.19.RELEASE'
+    compile "org.springframework.boot:spring-boot-starter-data-jpa:2.2.0.RELEASE"
+    compile("commons-io:commons-io:2.6")
+    compile("mysql:mysql-connector-java:8.0.17")
+    compile('org.flywaydb:flyway-core:6.5.7')
+    compile "net.sf.supercsv:super-csv:2.1.0"
+    testCompile("junit:junit:4.12")
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.16.0'
+    testCompile("org.assertj:assertj-core:3.11.1")
+
+
+}
+
+configurations.all {
+    exclude module: 'slf4j-log4j12'
+    exclude module: 'jms'
+    exclude module: 'jmxtools'
+    exclude module: 'jmxri'
+}
+
+//This is just a sample task to demo how we could submit a spark job
+task loadPageCount(){
+
+    String configFile;
+    if(!project.hasProperty('configFile')){
+        configFile = 'dev-pipeline.properties'
+    }
+
+    doLast{
+        ssh.run{
+            execute "spark-submit --class 'LoadPageCounts' --master=yarn --deploy-mode=client --executor-memory=2g --conf \"spark.sql.shuffle.partitions=10\"" +
+                    "./page-counts-1.0-SNAPSHOT.jar $configFile '27'"
+        }
+    }
+
+}

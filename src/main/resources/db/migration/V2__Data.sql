@@ -1,0 +1,27 @@
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'George_Clinton_(royal_governor)', 123, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'Wilkinson', 34, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'Special:BookSources/9781780643298', 68, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'Special:BookSources/9781780763163', 88, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'Michael_Jackson_(actor)', 12345, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'Michael_Jagger', 456, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'Angie_Dickinson', 1, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'Angriff_auf_Pearl_Harbor', 12, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'Anna_Petrowna', 89, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'File:Cruach_Ardrain_-_geograph.org.uk_-_343608.jpg ', 678, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'File:Crypte-basementen_-_Rolduc_-_20190145_-_RCE.jpg', 567, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'File:Cutaneous_histological_features_of_EPP.jpg', 902, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('en', 'File:Czciesz_815.jpg', 2, '20160101-010000', '20160101-020000', curdate());
+
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Wikijunior_Europa', 321, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Wikibooks:Babel:_Vorlage:User_bs 1', 1345, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Vorlage:Farblegende', 34, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Traktorenlexikon:_Ursus', 77, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Spiele', 99, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Tarot', 15, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Angie_Dickinson', 7, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Spezial:Linkliste/Kategorie:User_ja-1', 6, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Spezial:Globale_Benutzung/Flag_of_Finland.svg', 453, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Spezial:Alle_Seiten/Traktorenlexikon ', 6523, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Soziologische_Klassiker/_Collins,_Randall', 1, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'Regal:P%C3%A4dagogik', 4, '20160101-010000', '20160101-020000', curdate());
+insert into page_count (language, page, count, start, end, created_at) values ('de', 'File:Czciesz_815.jpg', 456, '20160101-010000', '20160101-020000', curdate());
